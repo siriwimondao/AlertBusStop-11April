@@ -142,12 +142,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 uri = Uri.parse("android.resource://" +
                         MainActivity.this.getPackageName() +
                         "/" +
-                        R.raw.bells);
+                        R.raw.bells); //เสียงเตือนก่อนถึงป้ายรถเมล์
             } else {
                 uri = Uri.parse("android.resource://" +
                         MainActivity.this.getPackageName() +
                         "/" +
-                        R.raw.add_bus1);
+                        R.raw.past_des); //เสียงเตือนเมื่อเลยป้ายรถเมล์
             }
 
         } else {
@@ -403,7 +403,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setCancelable(false);
-                    builder.setIcon(R.mipmap.ic_notification2);
+                    //builder.setIcon(R.mipmap.ic_nontification1);
                     builder.setTitle("โปรยืนยัน");
                     builder.setMessage("คุณต้องการเปลียน ปลายทางไปที่ " + nameStrings[i]);
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

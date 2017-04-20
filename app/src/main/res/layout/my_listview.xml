@@ -17,6 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitEnd"
-        android:src="@mipmap/ic_notification2" />
+        android:src="@mipmap/ic_nontification1" />
 
 </LinearLayout>

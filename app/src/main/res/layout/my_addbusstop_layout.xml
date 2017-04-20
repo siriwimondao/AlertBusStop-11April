@@ -40,12 +40,14 @@
         android:layout_alignParentBottom="true" />
 
     <LinearLayout
-        android:layout_below="@+id/linTop2"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:id="@+id/linTop">
+        android:padding="10dp"
+        android:id="@+id/linTop"
+        android:layout_below="@+id/linTop2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:orientation="vertical"
@@ -84,24 +86,26 @@
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/linbutton"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:id="@+id/linbutton">
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/record_web"
                 android:id="@+id/imageView"
-                android:layout_weight="54.08" />
+                android:layout_width="97dp"
+                android:layout_height="58dp"
+                android:src="@drawable/record_web"
+                android:layout_weight="0.41" />
 
             <ImageView
-                android:layout_width="176dp"
-                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+                android:layout_width="104dp"
+                android:layout_height="59dp"
                 android:src="@drawable/play2_web"
-                android:id="@+id/imageView2" />
+                android:layout_weight="0.47" />
 
         </LinearLayout>
 
